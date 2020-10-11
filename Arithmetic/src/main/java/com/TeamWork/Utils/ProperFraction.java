@@ -15,6 +15,10 @@ public class ProperFraction {
     int getDenominator(){
         return this.denominator;
     }
+    String showCompleteRepresentation(){
+    String completeRepresentation = Integer.toString(this.denominator).concat("/").concat(Integer.toString(this.molecular));
+    return completeRepresentation;
+    }
     //约分
     void Reduce(){
         int commonDivisor = getCommonDivisor(this.getDenominator(),this.getMolecular());

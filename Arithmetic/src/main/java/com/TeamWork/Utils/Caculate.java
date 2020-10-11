@@ -1,7 +1,7 @@
 package com.TeamWork.Utils;
 
 public class Caculate {
-    public ProperFraction caculate(ProperFraction properFraction1 , ProperFraction properFraction2 , String sign){
+    public static ProperFraction caculate(ProperFraction properFraction1, ProperFraction properFraction2, String sign){
         ProperFraction answer = new ProperFraction();
         switch (sign){
             case "+" :{
