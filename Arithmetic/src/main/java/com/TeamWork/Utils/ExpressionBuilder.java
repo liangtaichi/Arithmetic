@@ -192,12 +192,12 @@ public class ExpressionBuilder {
                 answer = Caculate.caculate(e1,e2,sign1);
                 while (answer.getDenominator() < 0){
                     e4 = ProperFractionBuilder.build(
-                            Caculate.caculate(e1,e2,sign1).getDenominator()/Caculate.caculate(e1,e2,sign1).getMolecular());
+                            Caculate.caculate(e2,e3,sign1).getDenominator()/Caculate.caculate(e2,e3,sign1).getMolecular());
 
                 }
             }
         }
-        operation = e1.showCompleteRepresentation().concat(" ").concat(sign1).concat(" ").concat(e2.showCompleteRepresentation()).concat(" ").concat(sign2).concat(e3.showCompleteRepresentation()).concat("=").concat(" ").concat(";");
+        operation = e1.showCompleteRepresentation().concat(" ").concat(sign1).concat(" ").concat(e2.showCompleteRepresentation()).concat(" ").concat(sign2).concat(e3.showCompleteRepresentation()).concat(" ").concat(sign3).concat(e4.showCompleteRepresentation()).concat(" ").concat("=").concat(" ").concat(";");
         return operation;
     }
 }
