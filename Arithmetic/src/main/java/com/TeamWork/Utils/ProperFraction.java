@@ -15,8 +15,8 @@ public class ProperFraction {
     int getDenominator(){
         return this.denominator;
     }
-    String showCompleteRepresentation(){
-    String completeRepresentation = Integer.toString(this.denominator).concat("/").concat(Integer.toString(this.molecular));
+    public String showCompleteRepresentation(){
+    String completeRepresentation = Integer.toString(this.molecular).concat("/").concat(Integer.toString(this.denominator));
     return completeRepresentation;
     }
     //约分

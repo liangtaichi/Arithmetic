@@ -13,11 +13,11 @@ public class evalRPN {
             res = (ProperFraction) stack.pop();
         }
 
-        while (!stack.empty() && !((char) stack.peek() == ')')) {
+        while (!stack.empty() && !( (String) stack.peek() == ")")) {
 
-            char sign = (char) stack.pop();
+            String sign = (String) stack.pop();
 
-            if (sign == '+') {
+            if (sign == "+") {
                 res = Caculate.caculate((ProperFraction) stack.pop(),res,"+");
             } else {
                 res = Caculate.caculate((ProperFraction) stack.pop(), res, "-");
